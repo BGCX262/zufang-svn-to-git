@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:background="@android:color/white"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/hotcity" android:layout_width="wrap_content" android:layout_alignParentTop="true"
+		android:layout_height="wrap_content" android:textColor="#111111"
+		android:layout_marginTop="5dp" android:text="热点城市:" />
+	<RadioGroup android:layout_below="@id/hotcity" android:id="@+id/group"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<!-- 北京上海广州深圳杭州南京成都 -->
+		
+		<RadioButton android:id="@+id/bj" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:text="北京" />
+		
+		<RadioButton android:id="@+id/sh" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:text="上海" />
+			
+		<RadioButton android:id="@+id/gz" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:text="广州" />
+			
+		<RadioButton android:id="@+id/cd" android:textColor="@android:color/black"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="成都" />
+			
+	</RadioGroup>
+	
+	<Button android:id="@+id/more" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="更多"
+		android:layout_below="@id/group" android:layout_marginTop="5dp"
+		android:layout_marginRight="5dp" />
+	<TextView android:id="@+id/curr_city" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_toRightOf="@id/more"
+		android:layout_marginLeft="10dp" android:textSize="15dp"
+		android:layout_alignBaseline="@id/more" android:textColor="@android:color/black"
+		android:text="未选择城市" />
+		
+		<TextView android:layout_below="@id/more" android:id="@+id/category" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textColor="#111111"
+		android:layout_marginTop="5dp" android:text="请选择租房类型:" />
+		
+	<RadioGroup android:layout_below="@id/category" android:id="@+id/category_group"
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<RadioButton android:id="@+id/hezu" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:text="合租房" />
+		
+		<RadioButton android:id="@+id/zhengzu" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:text="整租房" />
+			
+	</RadioGroup>
+	<RelativeLayout android:layout_below="@id/category_group"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:id="@+id/submit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="搜房"
+			android:gravity="center" android:layout_alignParentRight="true"
+			android:layout_margin="5dp"></Button>
+		<EditText android:id="@+id/et_keyword" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_toLeftOf="@id/submit"
+			android:hint="@string/et_hint" android:layout_margin="5dp"
+			android:imeOptions="actionGo"></EditText>
+		<CheckBox android:layout_width="wrap_content" android:id="@+id/update_notify_checkbox"
+			android:text="@string/update_notify" android:layout_below="@id/et_keyword"
+			android:layout_height="wrap_content" android:textColor="@android:color/black"
+			android:layout_alignParentLeft="true"></CheckBox>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+		<Button android:layout_height="40dp" android:id="@+id/manage_reminder"
+			android:text="@string/manage_reminder" android:layout_width="fill_parent"
+			android:background="@drawable/btn" android:layout_alignParentLeft="true"
+			android:layout_weight="1"></Button>
+
+		<Button android:layout_height="40dp" android:id="@+id/view_stored_info"
+			android:text="@string/view_stored" android:layout_width="fill_parent"
+			android:layout_alignParentRight="true" android:background="@drawable/btn"
+			android:layout_weight="1"></Button>
+			
+		<Button android:layout_height="40dp" android:id="@+id/feedback"
+			android:text="@string/feedback" android:layout_width="fill_parent"
+			android:layout_alignParentRight="true" android:background="@drawable/btn"
+			android:layout_weight="1"></Button>
+	</LinearLayout>
+
+</RelativeLayout>

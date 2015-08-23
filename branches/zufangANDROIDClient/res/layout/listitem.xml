@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/button_bg_white">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_margin="5dp"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text=""
+            android:textSize="16sp"
+            android:id="@+id/longDesc"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/shortDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:text=""
+            android:textColor="#000000"
+            android:id="@+id/pastTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+        <ImageView
+            android:id="@+id/open_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/open_detail"
+            ></ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/star_off"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+</LinearLayout>

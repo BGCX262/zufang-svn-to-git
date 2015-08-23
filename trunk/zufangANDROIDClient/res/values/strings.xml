@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ZufangStandards!</string>
+    <string name="app_name">快租</string>
+    <string name="input_zufanginfo_hint">请输入你的租房信息</string>
+    <string name="label_input_keyword">租房关键字：</string>
+    <string name="bt_confirm">确定</string>
+    <string name="et_hint">关键字</string>
+    <string name="update_notify">当有更新时提醒我（订阅）</string>
+    <string name="manage_reminder">管理订阅</string>
+    <string name="selected_city">已选择城市为:\u0020</string>
+    <string name="select_city">选择城市\u0020</string>
+    <string name="select_city_tips">请先选择城市！</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="delete">删除</string>
+    <string name="sub_del_confirm_title">取消订阅</string>
+    <string name="sub_del_confirm_detail">你确定要删除此订阅信息吗？</string>
+    <string name="no_sub_info">没有订阅信息！</string>
+    <string name="spinner_prompt">请选择更新频率！</string>
+    <string name="spinner_label">设定更新频率：</string>
+    <string name="view_stored">查看收藏</string>
+    <string name="no_store">暂时没有收藏信息</string>
+    <string name="feedback">反馈</string>
+    <string name="ticker_text">发现%d条最新房源！</string>
+</resources>

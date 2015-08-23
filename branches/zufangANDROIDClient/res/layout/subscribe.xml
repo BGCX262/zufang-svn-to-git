@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@android:color/white">
+
+	<TableRow>
+		<TextView android:id="@+id/sub_info" />
+		<Button android:text="@string/sub_del_confirm_title" android:id="@+id/del_sub"></Button>
+	</TableRow>
+	<TableRow>
+		<TextView android:id="@+id/label_spinner" android:text="@string/spinner_label" />
+
+		<Spinner android:id="@+id/update_internal_spinner"
+			android:prompt="@string/spinner_prompt"
+			android:layout_alignParentRight="true" android:layout_below="@id/sub_info"></Spinner>
+	</TableRow>
+</TableLayout>
